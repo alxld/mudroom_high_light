@@ -35,6 +35,14 @@ class MudroomHighLight(NewLight):
         )
 
         self.entities["light.mudroom_high_group"] = None
-        self.motion_sensors.append("Mudroom High Motion Sensor")
-        self.motion_sensors.append("Mudroom Low Motion Sensor")
-        self.motion_sensors.append("Theater Stairs Motion Sensor")
+        # self.motion_sensors.append("Mudroom High Motion Sensor")
+        # self.motion_sensors.append("Mudroom Low Motion Sensor")
+        # self.motion_sensors.append("Theater Stairs Motion Sensor")
+
+        self.motion_sensors.append(
+            "binary_sensor.mudroom_high_motion_sensor_occupancy_3"
+        )
+        self.motion_sensors.append("binary_sensor.mudroom_low_motion_sensor_motion_3")
+        self.motion_sensors.append(
+            "binary_sensor.theater_stairs_motion_sensor_occupancy_4"
+        )
